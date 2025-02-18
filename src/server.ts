@@ -1,9 +1,13 @@
 import express from "express";
 import cors from "cors";
+import dotenv from "dotenv";
 import { BalldontlieAPI } from "@balldontlie/sdk";
 
+// Load environment variables
+dotenv.config();
+
 // Initialize the API client
-const api = new BalldontlieAPI({ apiKey: "TODO" });
+const api = new BalldontlieAPI({ apiKey: process.env.NBA_API_KEY as string });
 
 const app = express();
 const port = 5001;
