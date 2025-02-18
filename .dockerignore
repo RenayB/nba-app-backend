@@ -1,0 +1,36 @@
+# Node modules (should be installed inside the container)
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Environment files (security risk)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+dist
+build
+
+# Logs
+logs
+*.log
+logs/*.log
+
+# Docker files that shouldn't be copied
+Dockerfile
+docker-compose.yml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Git files
+.git
+.gitignore
+
+# Editor/IDE settings
+.vscode
+.idea
+*.swp
