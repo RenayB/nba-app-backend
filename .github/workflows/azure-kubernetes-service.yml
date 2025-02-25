@@ -85,8 +85,8 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t rayregistry.azurecr.io/my-app:v1 .
-          docker push rayregistry.azurecr.io/my-app:v1
+          docker build -t rayregistry.azurecr.io/nba-app-backend .
+          docker push rayregistry.azurecr.io/nba-app-backend
 
 
       # Builds and pushes an image up to your Azure Container Registry
